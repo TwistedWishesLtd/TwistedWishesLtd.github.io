@@ -25,10 +25,17 @@
     .center {
       text-align: center;
     }
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
     .responsive {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 500px;
+      width: 100%;
+      height: auto;
     }
     @media (max-width: 600px) {
       .responsive {
@@ -113,8 +120,8 @@
 <body>
   <div class="container">
 
-    <div class="center section">
-      <img src="twist2.png" alt="TwistedWishes Logo" class="responsive" style="max-width: 500px;" />
+    <div class="logo-wrap">
+      <img src="twist2.png" alt="TwistedWishes Logo" class="responsive" />
     </div>
 
     <div class="center section">
@@ -125,7 +132,7 @@
     <div class="section">
       <h2>Why reserve now?</h2>
       <p>These supporter tiers are our way of proving demand to investors and speeding up the launch of Get Knotted™. 
-      Your reservation is <strong>fully refundable</strong> and shows you believe in bringing fantasy-driven intimacy tech to life. Spaces are limited, so act fast.</p>
+      Your reservation is <strong>fully refundable</strong> and shows you believe in bringing fantasy-driven intimacy tech to life.</p>
     </div>
 
     <div class="section center">
