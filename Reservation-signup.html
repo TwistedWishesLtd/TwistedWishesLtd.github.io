@@ -23,6 +23,16 @@
     .tier-card {
       position: relative;
     }
+    /* Mobile-friendly ribbon adjustments */
+    @media (max-width: 600px) {
+      .ribbon {
+        top: 5px;
+        right: 5px;
+        font-size: 0.75em;
+        padding: 4px 8px;
+        transform: rotate(0deg);
+      }
+    }
   </style>
 </head>
 <body>
@@ -86,28 +96,17 @@
       For your privacy, charges will appear on your statement as “TWishes Ltd” or “TW Ltd”.
     </p>
   </section>
-</p>
-        <form action="https://formspree.io/f/xyzpwgky" method="POST">
-  <label for="email">Email address:</label><br>
-  <input type="email" name="email" id="email" required><br><br>
 
-  <label for="first-name">First name (optional):</label><br>
-  <input type="text" name="first-name" id="first-name"><br><br>
-
-  <label for="signup-type">What would you like to sign up for?</label><br>
-  <input type="radio" id="full-mailing" name="signup-type" value="Full Mailing List" required>
-  <label for="full-mailing">Full Mailing List — includes newsletters, sneak peeks, and community updates</label><br>
-
-  <input type="radio" id="preorder-only" name="signup-type" value="Pre-order Notification Only" required>
-  <label for="preorder-only">Pre-order Notification Only — one-time email when pre-orders go live</label><br><br>
-
-  <label>
-    <input type="checkbox" name="gdpr-consent" required>
-    I consent to receive emails from TwistedWishes in line with the  <a href="privacy.html">Privacy Policy</a>. I can unsubscribe at any time.
-  </label><br><br>
-
-  <button type="submit">Join the List</button>
-</form>
+  <!-- Formspree Signup -->
+  <section class="content-block" style="margin-top: 3em;">
+    <h2>Not ready to reserve yet?</h2>
+    <p>Join our VIP list to get updates and be first to know when Get Knotted™ is available.</p>
+    <form action="YOUR_FORMSPREE_LINK" method="POST" style="max-width: 400px; margin: auto;">
+      <label for="email">Email Address:</label><br>
+      <input type="email" name="email" id="email" required style="width: 100%; padding: 8px; margin-bottom: 1em;">
+      <button type="submit" class="btn-primary" style="width: 100%;">Join the VIP List</button>
+    </form>
+  </section>
 
 </main>
 
@@ -119,3 +118,4 @@
 
 </body>
 </html>
+
