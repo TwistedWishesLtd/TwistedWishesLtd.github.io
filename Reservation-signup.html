@@ -33,6 +33,7 @@
       gap: 2em;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: stretch; /* makes cards equal height */
     }
     .tier-card {
       position: relative;
@@ -41,6 +42,9 @@
       width: 280px;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .tier-card h3 {
       margin-top: 0;
@@ -49,6 +53,7 @@
       list-style: none;
       padding: 0;
       text-align: left;
+      flex-grow: 1;
     }
     .btn-primary {
       display: inline-block;
@@ -58,9 +63,15 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      text-align: center;
+      margin-top: 1em;
     }
     .btn-primary:hover {
       background: #c2c9ff;
+    }
+    a {
+      color: #E0E5FF; /* brand link colour */
+      text-decoration: underline;
     }
     .ribbon {
       position: absolute;
@@ -110,33 +121,47 @@
 
         <!-- Founder’s Pets Tier -->
         <div class="tier-card">
-          <h3>Founder’s Pets</h3>
-          <p class="price">£8</p>
-          <ul>
-            <li>48 hour early access when pre-orders go live</li>
-            <li>Exclusive short <em>knotting</em> story via QR code</li>
-            <li>First invites for future TwistedWishes product testing</li>
-            <li>Surprise extras – think branded toy wipes, lube samples, and other launch treats</li>
-          </ul>
+          <div>
+            <h3>Founder’s Pets</h3>
+            <p class="price">£8</p>
+            <ul>
+              <li>48 hour early access when pre-orders go live</li>
+              <li>Exclusive short <em>knotting</em> story via QR code</li>
+              <li>First invites for future TwistedWishes product testing</li>
+              <li>Surprise extras – think branded toy wipes, lube samples, and other launch treats</li>
+            </ul>
+          </div>
           <a href="https://buy.stripe.com/bJe3cu0Nv6Uy57T5KL63K00" target="_blank" class="btn-primary">Reserve Now – £8</a>
         </div>
 
-       <!-- Most Beloved Tier -->
-<div class="tier-card" style="border: 2px solid gold; background: rgba(255, 255, 200, 0.1);">
-  <div class="ribbon">Most Popular</div>
-  <h3>🌟 Most Beloved</h3>
-  <p class="price">£15</p>
-  <ul>
-    <li>All Founder’s Pets perks</li>
-    <li>72 hour early access window</li>
-    <li>Exclusive “Most Beloved” recognition on our Supporters Wall (optional real name or chosen tag)</li
-  </ul>
-  <a href="https://buy.stripe.com/6oUbJ067PceS2ZLb5563K01" target="_blank" class="btn-primary">Reserve Now – £15</a>
-</div>
+        <!-- Most Beloved Tier -->
+        <div class="tier-card" style="border: 2px solid gold; background: rgba(255, 255, 200, 0.1);">
+          <div class="ribbon">Most Popular</div>
+          <div>
+            <h3>🌟 Most Beloved</h3>
+            <p class="price">£15</p>
+            <ul>
+              <li>All Founder’s Pets perks</li>
+              <li>72 hour early access window</li>
+              <li>Exclusive “Most Beloved” recognition on our Supporters Wall (optional real name or chosen tag)</li>
+            </ul>
+          </div>
+          <a href="https://buy.stripe.com/6oUbJ067PceS2ZLb5563K01" target="_blank" class="btn-primary">Reserve Now – £15</a>
+        </div>
 
-         Female-led Ltd Company<br/>
-         <p>&copy; 2025 TwistedWishes Ltd | Company No. 16541083</p>
-        <a href="mailto:contact@thetwistedwishes.com">Email us</a>
+      </div>
+    </div>
 
-            <a href="index.html">← Back to Home</a>
+    <hr class="section">
 
+    <div class="center section">
+      <p>Female-led Ltd Company<br/>&copy; 2025 TwistedWishes Ltd | Company No. 16541083</p>
+      <p>
+        <a href="mailto:contact@thetwistedwishes.com">Email us</a> | 
+        <a href="index.html">← Back to Home</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
