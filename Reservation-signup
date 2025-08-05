@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder’s Pets – TwistedWishes</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Uses your existing CSS -->
+  <style>
+    /* Ribbon styling */
+    .ribbon {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: gold;
+      color: black;
+      padding: 5px 10px;
+      font-weight: bold;
+      font-size: 0.8em;
+      border-radius: 3px;
+      transform: rotate(5deg);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .tier-card {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1>🐾 Join Founder’s Pets</h1>
+    <p class="intro-text">
+      Be one of the very first to support <strong>Get Knotted™</strong> and secure your spot in our exclusive inner circle.
+    </p>
+  </div>
+</header>
+
+<main class="container">
+  
+  <section class="content-block">
+    <h2>Why reserve now?</h2>
+    <p>
+      These supporter tiers are our way of proving demand to investors and speeding up the launch of Get Knotted™. 
+      Your reservation is <strong>fully refundable</strong> and shows you believe in bringing fantasy-driven intimacy tech to life.
+    </p>
+  </section>
+
+  <section class="content-block">
+    <h2>Choose Your Tier</h2>
+    <div class="tiers" style="display: flex; gap: 2em; flex-wrap: wrap; justify-content: center;">
+
+      <!-- Founder’s Pets Tier -->
+      <div class="tier-card" style="border: 1px solid #ccc; padding: 1.5em; border-radius: 10px; width: 280px; text-align: center; background: #fff;">
+        <h3>Founder’s Pets</h3>
+        <p class="price">£8</p>
+        <ul style="list-style: none; padding: 0; text-align: left;">
+          <li>Priority access when pre-orders go live</li>
+          <li>Exclusive short <em>knotting</em> story via QR code</li>
+          <li>First invites for future TwistedWishes product testing</li>
+          <li>Surprise extras – think branded toy wipes, lube samples, and other launch treats</li>
+        </ul>
+        <a href="https://buy.stripe.com/bJe3cu0Nv6Uy57T5KL63K00" target="_blank" class="btn-primary" style="display: inline-block; margin-top: 1em;">
+          Reserve Now – £8
+        </a>
+      </div>
+
+      <!-- Most Beloved Tier -->
+      <div class="tier-card" style="border: 2px solid gold; padding: 1.5em; border-radius: 10px; width: 280px; text-align: center; background: #fffbea;">
+        <div class="ribbon">Most Popular</div>
+        <h3>🌟 Most Beloved</h3>
+        <p class="price">£15</p>
+        <ul style="list-style: none; padding: 0; text-align: left;">
+          <li>All Founder’s Pets perks</li>
+          <li>Extra surprise launch perk</li>
+          <li>Exclusive “Most Beloved” recognition on our Supporters Wall (optional)</li>
+          <li>First access window before other tiers</li>
+        </ul>
+        <a href="https://buy.stripe.com/6oUbJ067PceS2ZLb5563K01" target="_blank" class="btn-primary" style="display: inline-block; margin-top: 1em;">
+          Reserve Now – £15
+        </a>
+      </div>
+
+    </div>
+    <p class="small-text" style="margin-top: 1.5em; text-align: center;">
+      For your privacy, charges will appear on your statement as “TWishes Ltd” or “TW Ltd”.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 TwistedWishes Ltd | Company No. 16543083</p>
+  </div>
+</footer>
+
+</body>
+</html>
