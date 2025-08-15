@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TwistedWishes | Supporters</title>
+  <style>
+    body {
+      background-image: url('background2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #E0E5FF;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .center { text-align: center; }
+    img.responsive {
+      width: 100%;
+      height: auto;
+    }
+    .section { margin-bottom: 40px; }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .col { flex: 1; min-width: 260px; }
+    a { color: #E0E5FF; text-decoration: underline; }
+    .card {
+      border: 1px solid rgba(224,229,255,0.2);
+      padding: 16px;
+      background: rgba(0,0,0,0.35);
+    }
+    .pill {
+      display:inline-block;
+      border:1px solid rgba(224,229,255,0.35);
+      padding:8px 12px;
+      border-radius:999px;
+      text-decoration:none;
+    }
+    /* Supporters wall */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .chip {
+      border: 1px solid rgba(224,229,255,0.2);
+      background: rgba(0,0,0,0.35);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #E0E5FF;
+      box-shadow: 0 0 0 3px rgba(224,229,255,0.15);
+    }
+    .muted { color: rgba(224,229,255,0.85); font-size: 0.95rem; }
+    hr { border: none; border-top: 1px solid rgba(224,229,255,0.25); margin: 30px 0; }
+  </style>
+  <!-- (Optional) If you use GA on other pages and want it here too, paste your GA tag block above this comment -->
+</head>
+<body>
+  <div class="container">
+    <div class="center section">
+      <a href="./">
+        <img src="twist2.png" alt="TwistedWishes Logo" class="responsive" style="max-width: 420px;" />
+      </a>
+    </div>
+
+    <div class="center section">
+      <h1>Support TwistedWishes</h1>
+      <p>Back the build of <em>Get Knotted</em> and (if you want) have your name added to our Supporters Wall. Funds go directly into prototype R&amp;D, safety checks, and pre‑production.</p>
+    </div>
+
+    <div class="section row">
+      <div class="col card">
+        <h2 style="margin-top:0;">Choose a Tier</h2>
+        <div class="section" style="margin-bottom:18px;">
+          <h3 style="margin:0 0 6px;">Founder’s Pets — £8 (~$10)</h3>
+          <p class="muted" style="margin:0 0 10px;">A low‑cost cheer‑on. Name on the wall + insider updates.</p>
+          <p style="margin:0 0 6px;">
+            <a class="pill" href="https://buy.stripe.com/bJe3cu0Nv6Uy57T5KL63K00">Back with £8</a>
+          </p>
+          <p class="muted" style="margin:0;">After checkout, you’ll confirm the display name (or choose anonymous).</p>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;">Most Beloved — £15 (~$19)</h3>
+          <p class="muted" style="margin:0 0 10px;">Everything above + early‑bird perks when we ship.</p>
+          <p style="margin:0 0 6px;">
+            <a class="pill" href="https://buy.stripe.com/6oUbJ067PceS2ZLb5563K01">Back with £15</a>
+          </p>
+          <p class="muted" style="margin:0;">Opt for first‑name + initial on the wall or stay anonymous.</p>
+        </div>
+        <p class="muted" style="margin-top:14px;">Prices include tax where applicable. No extra tax at checkout.</p>
+      </div>
+
+      <div class="col card">
+        <h2 style="margin-top:0;">Where your backing goes</h2>
+        <ul class="muted" style="margin-top:0;">
+          <li>Soft‑robotics prototypes, materials &amp; lab time</li>
+          <li>External safety review &amp; basic compliance checks (UK/US)</li>
+          <li>Industrial design/CAD polishing for manufacturing</li>
+          <li>Community demos and pre‑order fulfilment prep</li>
+        </ul>
+        <p class="muted">Questions? <a href="mailto:contact@thetwistedwishes.com">Email us</a> or call +44 20 3769 4959.</p>
+        <p><a href="./Reservation-signup.html">Prefer to reserve instead? Join the pre‑order list →</a></p>
+      </div>
+    </div>
+
+    <div class="section card">
+      <h2 style="margin-top:0;">Supporters Wall</h2>
+      <p class="muted">If you’ve backed but don’t see your name yet, it’ll appear after we reconcile the list. Want to change how your name shows? Reply to your confirmation email.</p>
+      <div class="grid" id="supportersGrid" aria-live="polite"></div>
+    </div>
+
+    <hr/>
+
+    <div class="center section" id="bottom">
+      <img src="twist2.png" alt="Logo Small" style="width: 160px;" />
+      <p>Female‑led Ltd Company</p>
+      <p>&copy; <span id="year"></span> TwistedWishes Ltd | Company No. 16541083</p>
+      <p><a href="mailto:contact@thetwistedwishes.com">Email us</a></p>
+      <p><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </div>
+
+  <script>
+    // ----- Edit this list as you confirm supporters -----
+    const SUPPORTERS = [
+      // Examples — replace with real names as you go.
+      { name: "A. Cole", tier: "Most Beloved" },
+      { name: "R. Rohatgi", tier: "Founder’s Pets" },
+      { name: "Anonymous", tier: "Most Beloved" }
+    ];
+
+    const grid = document.getElementById('supportersGrid');
+
+    function renderSupporters() {
+      grid.innerHTML = "";
+      if (!SUPPORTERS.length) {
+        grid.innerHTML = '<p class="muted">No names yet — be the first to back us today.</p>';
+        return;
+      }
+      SUPPORTERS.forEach(s => {
+        const item = document.createElement('div');
+        item.className = 'chip';
+        item.innerHTML =
+          '<span class="dot" aria-hidden="true"></span>' +
+          '<div><div><strong>' + (s.name || 'Anonymous') + '</strong></div>' +
+          '<div class="muted">' + (s.tier || 'Supporter') + '</div></div>';
+        grid.appendChild(item);
+      });
+    }
+
+    renderSupporters();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
